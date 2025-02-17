@@ -1,12 +1,8 @@
-{
+body {
+    font-family: 'Archivo', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
-body {
-    background-color: #f8f8f8;
+    background-color: #fff;
     color: #000;
 }
 
@@ -14,91 +10,124 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 20px 40px;
     background: #fff;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid #ccc;
 }
 
-.logo {
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#hero {
+    text-align: left;
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3em;
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
+.hero-content {
     display: flex;
-    gap: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-.icons {
-    font-size: 22px;
-    display: flex;
-    gap: 15px;
-}
-
-.main {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 80px;
-}
-
-.text-content {
-    max-width: 600px;
-}
-
-.by {
-    font-size: 14px;
-    color: #777;
-    text-transform: uppercase;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 64px;
-    line-height: 1;
-    text-transform: uppercase;
-    margin: 20px 0;
-}
-
-.description {
-    font-size: 16px;
-    line-height: 1.5;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.btn {
-    background: #000;
-    color: #fff;
-    padding: 12px 24px;
+.btn-main {
+    background-color: black;
+    color: white;
     border: none;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 10px 20px;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #333;
-}
-
-.counter {
     font-size: 14px;
-    color: #666;
-    margin-top: 10px;
+    text-transform: uppercase;
 }
 
-.image-container img {
-    max-width: 600px;
+.btn-main:hover {
+    background-color: gray;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+   
+  
+}
+
+.collection {
+    text-align: left;
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.collection h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.car-item:first-child img {
+    border: 2px solid magenta;
+}
+
+.btn-secondary {
+    display: block;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: black;
+    color: white;
 }
