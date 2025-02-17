@@ -41,7 +41,7 @@ header {
     cursor: pointer;
 }
 
-#hero {
+#Section1 {
     text-align: left;
     padding: 60px;
     max-width: 1200px;
@@ -53,28 +53,20 @@ header {
     font-weight: bold;
 }
 
-.hero-content {
+.content1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.btn-main {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: uppercase;
+.content1 h1{
+
+    font-size: 4em;
 }
 
-.btn-main:hover {
-    background-color: gray;
-}
 
-.hero-image {
+.imagen1 {
     position: relative;
     width: 100%;
 }
@@ -100,24 +92,13 @@ header {
     margin-bottom: 20px;
 }
 
-.grid {
+.cajadeimagenes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.car-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid transparent;
-}
-
-.car-item:first-child img {
-    border: 2px solid magenta;
-}
-
-.btn-secondary {
+.button1 {
     display: block;
     margin: 20px auto;
     background: white;
@@ -131,3 +112,31 @@ header {
     background: black;
     color: white;
 }
+
+.description {
+    max-width: 40%;
+}
+button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button:hover {
+    background: black;
+    color: white;
+}
+.page-counter {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    }
+
+hr {
+     max-width: 80%;
+ }
