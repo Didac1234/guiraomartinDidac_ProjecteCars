@@ -79,7 +79,7 @@ header {
   
 }
 
-.collection {
+#collection {
     text-align: left;
     padding: 60px;
     max-width: 1200px;
